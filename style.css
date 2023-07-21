@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(bgimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    
+}
+main{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-25%);
+}
+.content h1{
+    font-size: 50px;
+}
+.box{
+    height: fit-content;
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+.box input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 400px;
+    outline: none;
+}
+.box input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.box button{
+    color: aqua;
+    margin-left: 30px;
+    padding: 5px 40px 5px 40px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+
+
+}
+ul{
+    margin-top: 30px;
+}
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: start;
+    padding-left: 60px;
+    position: relative;
+}
+ul li::before{
+    content: 'Not-done ';
+    background-color: gray;
+    border-radius: 10px;
+    margin-right: 8px;
+    
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: brown;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    margin-right: 70px;
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 10px;
+}
+ul li span:hover{
+    background-color: chocolate;
+}
+
+
+
+
+
+
